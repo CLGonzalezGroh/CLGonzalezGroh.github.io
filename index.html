@@ -87,7 +87,7 @@
                 Rompiendo todos los record de volumen<br/>
                 Cosecha de Sal, Lavado y Despecho
               </p>
-              <a class="experience-url" href="/LaSalina">Más Información</a>
+              <a class="experience-url" href="/salina/salina.html">Más Información</a>
             </div>
           </article>
           <article class="experience">
@@ -152,57 +152,13 @@
         </div>
       </div>
     </section>
-    <script>
-      const menu = document.querySelector('.menu');
-      const burgerButton = document.querySelector('#burger-button');
-      const l1 = document.querySelector('#l1');
-      const l2 = document.querySelector('#l2');
-      const l3 = document.querySelector('#l3');
-      const ipad = window.matchMedia("screen and (max-width: 767px)");
-      ipad.addListener(validation);
-
-      function validation(event)
-      {
-        if (event.matches)
-        {
-          burgerButton.addEventListener('click', showHide);
-          l1.addEventListener('click', hide);
-          l2.addEventListener('click', hide);
-          l3.addEventListener('click', hide);
-        }
-        else
-        {
-          burgerButton.removeEventListener('click', showHide);
-          l1.removeEventListener('click', hide);
-          l2.removeEventListener('click', hide);
-          l3.removeEventListener('click', hide);
-        }
-      }
-      validation(ipad);
-
-      function showHide()
-      {
-        if (menu.classList.contains('is-active'))
-        {
-          menu.classList.remove('is-active');
-        }
-        else
-        {
-          menu.classList.add('is-active');
-        }
-      }
-      function hide()
-      {
-        if (menu.classList.contains('is-active'))
-        {
-          menu.classList.remove('is-active');
-        }
-      }
-    </script>
+    <script src="/script/script.js"></script>
+    
     <footer class="footer">
       <div class="container">
         <p>Mi página web desarrollada personalmente 🙂</p>
       </div>
     </footer>
+
   </body>
 </html>
